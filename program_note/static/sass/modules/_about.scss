@@ -1,0 +1,67 @@
+@import '_base.scss';
+
+div.about_content {
+  height: 100%;
+  width: 100%;
+  background-color: $blue;
+  padding: 0;
+  top: 0;
+  text-align: center;
+  overflow: auto;
+
+  h1 {
+    padding-top: 6rem;
+    font-family: $cursive;
+    color: $purple;
+    font-size: 5rem;
+  }
+
+  div {
+    background-color: $yellow;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    width: 80%;
+    padding: 1rem;
+    overflow: auto;
+
+    h2 {
+      text-align: left;
+      color: $blue;
+      font-family: $cursive;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-family: $sans;
+      color: $purple;
+    }
+
+    div.left {
+      float: left;
+      display: inline;
+      text-align: left;
+      width: 45%;
+      margin-top: 0;
+    }
+
+    div.right {
+      float: right;
+      display: inline;
+      text-align: left;
+      width: 45%;
+      margin-top: 0;
+    }
+
+    div ul {
+      list-style: circle;
+
+      li {
+        margin-top: 1rem;
+        font-family: $sans;
+        color: $purple;
+      }
+    }
+  }
+}
