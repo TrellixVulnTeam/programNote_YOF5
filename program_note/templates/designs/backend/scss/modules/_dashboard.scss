@@ -1,0 +1,81 @@
+@import "_base.scss";
+
+div.right {
+  background-color: $purple;
+  flex: 0 0 80%;
+  display: flex;
+  flex-wrap: wrap;
+
+  h1 {
+    flex: 0 0 100%;
+    align-self: center;
+    text-align: center;
+    font-family: $cursive;
+    color: $orange;
+    font-size: 5rem;
+  }
+
+  div.note {
+    flex: 0 0 100%;
+    text-align: center;
+    position: relative;
+
+    input[name="title"] {
+      color: $bluePurple;
+      font-family: $sans;
+      background-color: $orange;
+      border-style: none;
+      position: relative;
+      bottom: -0.1rem;
+      left: -4.58rem;
+      width: 643.35px;
+      font-size: 2rem;
+    }
+
+    textarea {
+      color: $blue;
+      background-color: $yellow;
+      border-style: none;
+      border: none;
+      font-family: $cursive;
+      width: 644px;
+      font-size: 2rem;
+      resize: none;
+      position: relative;
+      left: 2.7rem;
+    }
+
+    input[name="category"] {
+      position: relative;
+      right: 35rem;
+      height: 2rem;
+      padding-bottom: 2rem;
+      font-family: $cursive;
+      color: $orange;
+      background-color: $blue;
+      width: 8.8rem;
+      border-style: none;
+      font-size: 1.5rem;
+    }
+    input[name="category"]:placeholder {
+      color: $orange;
+    }
+
+    button {
+      position: relative;
+      right: 15rem;
+      top: 3rem;
+      border-style: none;
+      color: $purple;
+      background-color: $orange;
+      font-family: $sans;
+      font-size: 2rem;
+      border-radius: 10px;
+    }
+
+    button:hover {
+      color: $orange;
+      background-color: $blue;
+    }
+  }
+}

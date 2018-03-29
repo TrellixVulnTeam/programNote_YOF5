@@ -8,9 +8,15 @@
     <ul>
       <li class="uname">
         {{ form.uname(placeholder=form.uname.description) }}
+        {% if form.uname.errors %}
+          <ul class="errors">{% for error in form.uname.errors %}<li>{{ error }}</li>{% endfor %}</ul>
+        {% endif %}
       </li>
       <li class="pword">
         {{ form.pword(placeholder=form.pword.description) }}
+        {% if form.pword.errors %}
+          <ul class="errors">{% for error in form.pword.errors %}<li>{{ error }}</li>{% endfor %}</ul>
+        {% endif %}
       </li>
       <li class="btn">
         <button type="reset">Reset</button>

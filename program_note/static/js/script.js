@@ -12,4 +12,9 @@ $(function() {
     }
     lastScrollTop = currentScrollTop;
   });
+
+  $("button[type='reset']").on("click", function() {
+    $("form ul li input").val('');
+  });
+
 });

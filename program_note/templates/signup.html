@@ -8,21 +8,36 @@
     <ul>
       <li class="fname">
         {{ form.firstName(placeholder=form.firstName.description) }}
+        {% if form.firstName.errors %}
+          <ul class="errors">{% for error in form.firstName.errors %}<li>{{ error }}</li>{% endfor %}</ul>
+        {% endif %}
       </li>
       <li class="lname">
         {{ form.lastName(placeholder=form.lastName.description) }}
       </li>
       <li class="email">
         {{ form.email(placeholder=form.email.description) }}
+        {% if form.email.errors %}
+          <ul class="errors">{% for error in form.email.errors %}<li>{{ error }}</li>{% endfor %}</ul>
+        {% endif %}
       </li>
       <li class="uname">
         {{ form.username(placeholder=form.username.description) }}
+        {% if form.username.errors %}
+          <ul class="errors">{% for error in form.username.errors %}<li>{{ error }}</li>{% endfor %}</ul>
+        {% endif %}
       </li>
       <li class="pword">
         {{ form.pword(placeholder=form.pword.description) }}
+        {% if form.pword.errors %}
+          <ul class="errors">{% for error in form.pword.errors %}<li>{{ error }}</li>{% endfor %}</ul>
+        {% endif %}
       </li>
       <li class="pword1">
         {{ form.pword1(placeholder=form.pword1.description) }}
+        {% if form.pword1.errors %}
+          <ul class="errors">{% for error in form.pword1.errors %}<li>{{ error }}</li>{% endfor %}</ul>
+        {% endif %}
       </li>
       <li class="btn">
         <button type="reset">Reset</button>

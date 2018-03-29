@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Nanum+Pen+Script");
+/* line 5, ../../../../../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../scss/modules/_base.scss */
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 8, ../scss/modules/_base.scss */
+div.backend_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+/* line 14, ../scss/modules/_base.scss */
+div.backend_wrapper div.left {
+  flex: 0 0 20%;
+  background-color: #5849B6;
+}
+/* line 18, ../scss/modules/_base.scss */
+div.backend_wrapper div.left ul {
+  text-align: center;
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 24, ../scss/modules/_base.scss */
+div.backend_wrapper div.left ul li.imgLi {
+  height: 200px;
+  max-width: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto 2rem;
+}
+/* line 31, ../scss/modules/_base.scss */
+div.backend_wrapper div.left ul li.imgLi img {
+  width: 100%;
+}
+/* line 36, ../scss/modules/_base.scss */
+div.backend_wrapper div.left ul li:nth-child(2) {
+  margin-bottom: 2rem;
+}
+/* line 39, ../scss/modules/_base.scss */
+div.backend_wrapper div.left ul li:nth-child(2) p {
+  font-family: "Nanum Pen Script", cursive;
+  color: #F2A62B;
+  font-size: 2rem;
+}
+/* line 46, ../scss/modules/_base.scss */
+div.backend_wrapper div.left ul li {
+  flex: 0 0 100%;
+}
+/* line 49, ../scss/modules/_base.scss */
+div.backend_wrapper div.left ul li a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: #F2A62B;
+}
+/* line 56, ../scss/modules/_base.scss */
+div.backend_wrapper div.left ul li a:hover {
+  color: #E3E47D;
+}
+/* line 60, ../scss/modules/_base.scss */
+div.backend_wrapper div.left ul li:not(last-child) {
+  margin-bottom: 1rem;
+}
+/* line 65, ../scss/modules/_base.scss */
+div.backend_wrapper div.left ul li.current a {
+  color: #E3E47D !important;
+}
+/* line 69, ../scss/modules/_base.scss */
+div.backend_wrapper div.left ul li.logout {
+  margin-top: 5rem;
+}
+/* line 71, ../scss/modules/_base.scss */
+div.backend_wrapper div.left ul li.logout a {
+  background-color: #F2A62B;
+  color: #870265;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+/* line 78, ../scss/modules/_base.scss */
+div.backend_wrapper div.left ul li.logout a:hover {
+  background-color: #870265;
+  color: #E3E47D;
+}
+/* line 85, ../scss/modules/_base.scss */
+div.backend_wrapper footer.desktop {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #34a4df;
+  text-align: center;
+  flex: 0 0 100%;
+}
+/* line 94, ../scss/modules/_base.scss */
+div.backend_wrapper footer.desktop div {
+  flex-basis: 50%;
+}
+/* line 98, ../scss/modules/_base.scss */
+div.backend_wrapper footer.desktop div.f1 {
+  order: 1;
+}
+/* line 101, ../scss/modules/_base.scss */
+div.backend_wrapper footer.desktop div.f1 p {
+  font-family: "Montserrat", sans-serif;
+  color: #F2A62B;
+  padding: 1rem;
+}
+/* line 108, ../scss/modules/_base.scss */
+div.backend_wrapper footer.desktop div.f2 {
+  order: 3;
+}
+/* line 112, ../scss/modules/_base.scss */
+div.backend_wrapper footer.desktop div.f3 {
+  order: 2;
+}
+/* line 115, ../scss/modules/_base.scss */
+div.backend_wrapper footer.desktop div.f3 p {
+  font-family: "Montserrat", sans-serif;
+  color: #E3E47D;
+  padding: 1rem;
+}
+/* line 122, ../scss/modules/_base.scss */
+div.backend_wrapper footer.desktop div.f4 {
+  order: 4;
+}
+/* line 125, ../scss/modules/_base.scss */
+div.backend_wrapper footer.desktop div.f4 p {
+  font-family: "Montserrat", sans-serif;
+  color: #E3E47D;
+}
+/* line 132, ../scss/modules/_base.scss */
+div.backend_wrapper footer.mobile {
+  display: none !important;
+  padding: 0;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #34a4df;
+  text-align: center;
+  align-items: center;
+  flex: 0 0 100%;
+}
+/* line 142, ../scss/modules/_base.scss */
+div.backend_wrapper footer.mobile div {
+  flex: 0 0 50%;
+}
+/* line 151, ../scss/modules/_base.scss */
+div.backend_wrapper footer.mobile div.right p {
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 0.5rem;
+  color: #E3E47D;
+}
+/* line 157, ../scss/modules/_base.scss */
+div.backend_wrapper footer.mobile div.right p.copyright {
+  color: #E3E47D;
+}
+/* line 161, ../scss/modules/_base.scss */
+div.backend_wrapper footer.mobile div.right p.email {
+  color: #F2A62B;
+}
+@media screen and (max-width: 600px) {
+  /* line 167, ../scss/modules/_base.scss */
+  div.backend_wrapper footer.desktop {
+    display: none;
+  }
+  /* line 170, ../scss/modules/_base.scss */
+  div.backend_wrapper footer.mobile {
+    display: flex !important;
+  }
+}
+
+/* line 3, ../scss/modules/_dashboard.scss */
+div.right {
+  background-color: #870265;
+  flex: 0 0 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 9, ../scss/modules/_dashboard.scss */
+div.right h1 {
+  flex: 0 0 100%;
+  align-self: center;
+  text-align: center;
+  font-family: "Nanum Pen Script", cursive;
+  color: #F2A62B;
+  font-size: 5rem;
+}
+/* line 18, ../scss/modules/_dashboard.scss */
+div.right div.note {
+  flex: 0 0 100%;
+  text-align: center;
+  position: relative;
+}
+/* line 23, ../scss/modules/_dashboard.scss */
+div.right div.note input[name="title"] {
+  color: #5849B6;
+  font-family: "Montserrat", sans-serif;
+  background-color: #F2A62B;
+  border-style: none;
+  position: relative;
+  bottom: -0.1rem;
+  left: -4.58rem;
+  width: 643.35px;
+  font-size: 2rem;
+}
+/* line 35, ../scss/modules/_dashboard.scss */
+div.right div.note textarea {
+  color: #018DD7;
+  background-color: #E3E47D;
+  border-style: none;
+  border: none;
+  font-family: "Nanum Pen Script", cursive;
+  width: 644px;
+  font-size: 2rem;
+  resize: none;
+  position: relative;
+  left: 2.7rem;
+}
+/* line 48, ../scss/modules/_dashboard.scss */
+div.right div.note input[name="category"] {
+  position: relative;
+  right: 35rem;
+  height: 2rem;
+  padding-bottom: 2rem;
+  font-family: "Nanum Pen Script", cursive;
+  color: #F2A62B;
+  background-color: #018DD7;
+  width: 8.8rem;
+  border-style: none;
+  font-size: 1.5rem;
+}
+/* line 60, ../scss/modules/_dashboard.scss */
+div.right div.note input[name="category"]:placeholder {
+  color: #F2A62B;
+}
+/* line 64, ../scss/modules/_dashboard.scss */
+div.right div.note button {
+  position: relative;
+  right: 15rem;
+  top: 3rem;
+  border-style: none;
+  color: #870265;
+  background-color: #F2A62B;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+/* line 76, ../scss/modules/_dashboard.scss */
+div.right div.note button:hover {
+  color: #F2A62B;
+  background-color: #018DD7;
+}

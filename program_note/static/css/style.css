@@ -494,6 +494,12 @@ div.signup_form_div form ul li.btn {
   margin-top: 2rem;
   margin-right: 1rem;
 }
+
+div.signup_form_div form ul li ul.errors li {
+  font-family: "Montserrat", sans-serif;
+  color: #F2A62B;
+}
+
 /* line 80, ../sass/modules/_signup.scss */
 div.signup_form_div form ul li.btn button {
   font-family: "Montserrat", sans-serif;
@@ -628,6 +634,12 @@ div.login_form_div form ul li.btn button {
   border-radius: 10px;
   border-style: none;
 }
+
+div.login_form_div form ul li ul.errors li {
+  font-family: "Montserrat", sans-serif;
+  color: #F2A62B;
+}
+
 /* line 64, ../sass/modules/_login.scss */
 div.login_form_div form ul li.btn button[type="reset"] {
   color: #E3E47D;

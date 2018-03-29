@@ -1,17 +1,5 @@
-from program_note import app, forms
+from program_note import app, forms, nav
 from flask import render_template
-from flask_nav import Nav
-from flask_nav.elements import Navbar, View
-
-nav = Nav(app)
-
-nav.register_element('navbar', Navbar(
-    'thenav',
-    View('Home Page', 'index'),
-    View('About', 'about'),
-    View('Create Account', 'signup'),
-    View('Log In', 'login')
-))
 
 @app.route("/")
 def index():
@@ -21,14 +9,18 @@ def index():
 def about():
     return render_template('about.html', page_title="About Program Notes", no_bg = True)
 
-@app.route("/signup")
+@app.route("/signup", methods=["GET", "POST"])
 def signup():
     form = forms.RegisterForm()
+    if form.validate_on_submit():
+        return "Horaay"
     return render_template('signup.html', page_title="Sign Up For Program Notes", form = form)
 
-@app.route("/login")
+@app.route("/login", methods=["GET", "POST"])
 def login():
     form = forms.LoginForm()
+    if form.validate_on_submit():
+        return "Horaay"
     return render_template('login.html', page_title="Log In", form = form)
 
 
