@@ -10,17 +10,16 @@
   <body>
     <div class="wrapper">
       <!-- if statement to select which header tag to use -->
-      <header class="no_bg">
-        <!-- change href to route -->
+      <header class="bg">
         <nav>
           <ul>
             <li>
-              <a href="home.html">Home</a>
-            </li>
-            <li class="current">
-              <a href="about.html">About</a>
+              <a href="/">Home</a>
             </li>
             <li>
+              <a href="/about">About</a>
+            </li>
+            <li class="current">
               <a href="/signup">Create Account</a>
             </li>
             <li class="login">
@@ -28,48 +27,39 @@
             </li>
           </ul>
         </nav>
+        <div class="signup_form_div">
+          <h1>Create Account</h1>
+          <form action="/signup" method="POST">
+            <ul>
+              <li class="fname">
+                <input type="text" name="fname" placeholder="First Name..." />
+              </li>
+              <li class="lname">
+                <input type="text" name="lname" placeholder="Last Name..." />
+              </li>
+              <li class="email">
+                <input type="text" name="email" placeholder="Email..." />
+              </li>
+              <li class="uname">
+                <input type="text" name="uname" placeholder="Username..." />
+              </li>
+              <li class="pword">
+                <input type="password" name="pword" placeholder="Enter a Password..." />
+              </li>
+              <li class="pword1">
+                <input type="password" name="pword1" placeholder="Reenter your Password..." />
+              </li>
+              <li class="btn">
+                <button type="reset">Reset</button>
+                <button type="submit">Sign Up</button>
+              </li>
+            </ul>
+          </form>
+        </div>
       </header>
-      <div class="about_content">
-        <h1>About Program Notes</h1>
-        <div class="about1">
-          <h2>Overview</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-        <div class="about2">
-          <h2>Features</h2>
-          <div class="left">
-            <ul>
-              <li>
-                Feature
-              </li>
-              <li>
-                Feature
-              </li>
-              <li>
-                Feature
-              </li>
-            </ul>
-          </div>
-          <div class="right">
-            <ul>
-              <li>
-                Feature
-              </li>
-              <li>
-                Feature
-              </li>
-              <li>
-                Feature
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
       <footer class="mobile">
         <div class="left">
-          <a href="/signup"><button>Sign Up</button></a>
+          <!-- <a href="/signup"><button>Sign Up</button></a> -->
         </div>
         <div class="right">
           <p class="copyright">
@@ -93,7 +83,7 @@
           </p>
         </div>
         <div class="f2">
-          <a href="/signup"><button>Sign Up</button></a>
+          <!-- <a href="/signup"><button>Sign Up</button></a> -->
         </div>
         <div class="f3">
           <p>

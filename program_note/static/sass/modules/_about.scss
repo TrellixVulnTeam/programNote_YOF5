@@ -1,57 +1,66 @@
 @import '_base.scss';
 
 div.about_content {
-  height: 100%;
   width: 100%;
   background-color: $blue;
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
   top: 0;
   text-align: center;
-  overflow: auto;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
 
   h1 {
     padding-top: 6rem;
     font-family: $cursive;
     color: $purple;
     font-size: 5rem;
+    flex: 0 0 100%;
   }
+
+  @media screen and (max-width: 890px) {
+    h1 {
+      padding-top: 10rem;
+    }
+  }
+
 
   div {
     background-color: $yellow;
     margin-left: auto;
     margin-right: auto;
     margin-top: 4rem;
-    width: 80%;
     padding: 1rem;
-    overflow: auto;
+    flex: 0 0 80%;
 
     h2 {
       text-align: left;
       color: $blue;
       font-family: $cursive;
       font-size: 3rem;
-      margin-bottom: 1rem;
+      // margin-bottom: 1rem;
     }
 
     p {
       font-family: $sans;
       color: $purple;
     }
+  }
 
-    div.left {
-      float: left;
-      display: inline;
-      text-align: left;
-      width: 45%;
-      margin-top: 0;
+  div.about2 {
+    display: flex;
+    flex-wrap: wrap;
+
+    h2 {
+      flex: 0 0 100%;
     }
 
-    div.right {
-      float: right;
-      display: inline;
+    div {
       text-align: left;
-      width: 45%;
-      margin-top: 0;
+      flex: 0 0 50% !important;
+      margin: 0;
+      padding: 0;
     }
 
     div ul {

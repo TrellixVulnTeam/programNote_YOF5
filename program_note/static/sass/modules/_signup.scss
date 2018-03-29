@@ -1,0 +1,144 @@
+@import '_base.scss';
+
+div.signup_form_div{
+  background-color: $transparent_purple;
+  box-shadow: 5px 5px 50px black;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  width: 80%;
+
+  h1 {
+    color: $orange;
+    font-family: $cursive;
+    font-size: 5rem;
+    padding-top: 5rem;
+  }
+
+  form {
+    margin-top: 1rem;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        flex: 1 0 50%;
+
+        input {
+          padding: 1rem;
+          width: 80%;
+          margin-top: 2rem;
+          background-color: $yellow;
+          border-style: none;
+          border-radius: 10px;
+          color: $purple;
+          font-family: $cursive;
+          font-size: 1.5rem;
+        }
+
+        input::placeholder {
+          color: $purple;
+          font-family: $cursive;
+          font-size: 1.5rem;
+        }
+      }
+
+      li.fname {
+        order: 1;
+      }
+
+      li.uname {
+        order: 2;
+      }
+
+      li.lname {
+        order: 3;
+      }
+
+      li.pword {
+        order: 4;
+      }
+
+      li.email {
+        order: 5;
+      }
+
+      li.pword1 {
+        order: 6;
+      }
+
+      li.btn {
+        order: 7;
+        text-align: right;
+        margin-top: 2rem;
+        margin-right: 1rem;
+
+        button {
+          font-family: $sans;
+          font-size: 1.5rem;
+          margin-left: 1rem;
+          padding: 0.5rem 1rem 0.5rem 1rem;
+          border-radius: 10px;
+          border-style: none;
+        }
+
+        button[type="reset"] {
+          color: $yellow;
+          background-color: $purple;
+        }
+
+        button[type="reset"]:hover {
+          color: $orange;
+        }
+
+        button[type="submit"] {
+          color: $blue;
+          background-color: $orange;
+        }
+
+        button[type="submit"]:hover {
+          color: $purple;
+          background-color: $blue;
+        }
+      }
+
+      @media screen and (max-width: 800px) {
+        li {
+          flex: 0 0 100% !important;
+
+          input {
+            padding: 0.5rem !important;
+            width: 90% !important;
+            margin-top: 1rem !important;
+            border-radius: 5px !important;
+            font-size: 1.2rem !important;
+          }
+          input::placeholder {
+            font-size: 1.2rem !important;
+          }
+        }
+        li.lname {
+          order: 2 !important;
+        }
+        li.email {
+          order: 3 !important;
+          margin-bottom: 2rem;
+        }
+        li.uname {
+          order: 4 !important;
+        }
+        li.pword {
+          order: 5 !important;
+        }
+        li.pword1 {
+          order: 6 !important;
+        }
+      }
+
+    }
+  }
+}

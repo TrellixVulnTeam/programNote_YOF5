@@ -1,5 +1,4 @@
 @import '_variables.scss';
-@import '_flex_nav.scss';
 
 body, html {
   height: 100%;
@@ -14,10 +13,11 @@ div.wrapper {
   margin: 0;
   padding: 0;
 
+
   header.bg {
     height: 100%;
     width: 100%;
-    background: url(../assets/home_img.jpg) no-repeat 50% 50%;
+    background: url(../assets/home_img.jpg) 50% 50%;
     top: 0;
     background-size: cover;
     margin: 0;
@@ -25,7 +25,7 @@ div.wrapper {
   }
 
   header.no_bg {
-    width: 100%;
+    width: auto;
     top: 0;
     margin: 0;
     padding: 0;
@@ -34,48 +34,64 @@ div.wrapper {
   nav {
     width: 100%;
     position: fixed;
+    background-color: $transparent_purple;
+    z-index: 100;
+    transition: all 0.5s ease;
 
     ul {
-      @include flexUL;
-      overflow: hidden;
-      background-color: $transparent_purple;
-      margin: 0;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      z-index: 10;
-
-      li.current {
-
-        a {
-          font-family: $sans;
-          color: $yellow;
-          text-decoration: none;
-          font-size: 2rem;
-        }
-      }
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
 
       li {
+        flex: 1 1 0;
 
         a {
+          text-decoration: none;
+          color: $orange;
+          display: block;
+          text-align: center;
           font-family: $sans;
           color: $orange;
-          text-decoration: none;
-          font-size: 2rem;
+          padding: 1rem;
+          font-size: 1.5rem;
         }
 
         a:hover {
           color: $yellow;
+          background-color: $transparent_blue;
+        }
+      }
+
+      @media screen and (max-width: 890px) {
+        li {
+          flex: 1 1 50%;
+        }
+      }
+
+      @media screen and (max-width: 455px) {
+        li {
+          a {
+            font-size: 1rem;
+          }
+        }
+      }
+
+
+      li.current {
+        a {
+          color: $yellow;
+          background-color: $transparent_blue;
         }
       }
 
       li.login {
-
         a {
           background-color: $purple;
           color: $blue;
-          padding: 1rem;
         }
-
         a:hover {
           background-color: $blue;
           color: $orange;
@@ -84,28 +100,37 @@ div.wrapper {
     }
   }
 
-  footer {
-    background-color: $light_blue;
-    width: 100%;
-    display: flex;
+  nav.hidden {
+    transform: translate3d(0, -100%, 0);
+  }
 
-    div.footer_left {
-      float: left;
-      background-color: $light_blue;
-      width: 50%;
+  footer.desktop {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: $light_blue;
+    text-align: center;
+
+    div {
+      flex-basis: 50%;
+    }
+
+    div.f1 {
+      order: 1;
 
       p {
         font-family: $sans;
         color: $orange;
         padding: 1rem;
       }
+    }
+
+    div.f2 {
+      order: 3;
 
       a {
-        margin-left: 1rem;
-
         button {
-          margin-top: 1rem;
-          margin-bottom: 1rem;
           text-decoration: none;
           color: $blue;
           font-family: $sans;
@@ -126,15 +151,87 @@ div.wrapper {
       }
     }
 
-    div.footer_right {
-      float: right;
-      background-color: $light_blue;
-      width: 50%;
-      text-align: right;
+    div.f3 {
+      order: 2;
 
       p {
+        font-family: $sans;
+        color: $yellow;
+        padding: 1rem;
+      }
+    }
 
+    div.f4 {
+      order: 4;
+
+      p {
+        font-family: $sans;
+        color: $yellow;
       }
     }
   }
+
+  footer.mobile {
+    display: none !important;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: $light_blue;
+    text-align: center;
+    align-items: center;
+
+    div {
+      flex: 0 0 50%;
+    }
+
+    div.left {
+      a {
+        button {
+          text-decoration: none;
+          color: $blue;
+          font-family: $sans;
+          font-size: 1rem;
+          background-color: $orange;
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+          padding-right: 1rem;
+          padding-left: 1rem;
+          border-radius: 10px;
+          border-style: none;
+        }
+
+        button:hover {
+          background-color: $purple;
+          color: $orange;
+        }
+      }
+    }
+
+    div.right {
+
+      p {
+        font-family: $sans;
+        padding-bottom: 0.5rem;
+        color: $bluePurple;
+      }
+
+      p.copyright {
+        color: $yellow;
+      }
+
+      p.email {
+        color: $orange;
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    footer.desktop {
+      display: none;
+    }
+    footer.mobile {
+      display: flex !important;
+    }
+  }
+
 }
