@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"/>
+    <meta name="description" content="A simple note taking app"/>
+    <title> {{ page_title }} </title>
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      {% if no_bg %}
+      <header class="no_bg">
+        {{ nav.navbar.render() }}
+      </header>
+      {% else %}
+      <header class="bg">
+        {{ nav.navbar.render() }}
+        {% block header %}
+
+        {% endblock %}
+      </header>
+      {% endif %}
+
+      {% block mainContent %}
+
+      {% endblock %}
+
+      <footer class="mobile">
+        <div class="left">
+          <a href="/signup"><button>Sign Up</button></a>
+        </div>
+        <div class="right">
+          <p class="copyright">
+            &copy; 2018 Program Notes
+          </p>
+          <p class="email">
+            info@programnotes.com
+          </p>
+          <p>
+            Privacy Policy
+          </p>
+          <p>
+            Terms and Conditions
+          </p>
+        </div>
+      </footer>
+      <footer class="desktop">
+        <div class="f1">
+          <p>
+            info@programnotes.com
+          </p>
+        </div>
+        <div class="f2">
+          <a href="/signup"><button>Sign Up</button></a>
+        </div>
+        <div class="f3">
+          <p>
+            &copy; 2018 Program Notes
+          </p>
+        </div>
+        <div class="f4">
+          <p>
+            Privacy Policy
+          </p>
+          <p>
+            Terms and Conditions
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+  </body>
+</html>
