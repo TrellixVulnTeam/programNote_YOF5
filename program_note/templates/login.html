@@ -4,12 +4,13 @@
 <div class="login_form_div">
   <h1>Log In</h1>
   <form action="/login" method="POST">
+    {{ form.hidden_tag() }}
     <ul>
       <li class="uname">
-        <input type="text" name="uname" placeholder="Username..." />
+        {{ form.uname(placeholder=form.uname.description) }}
       </li>
       <li class="pword">
-        <input type="password" name="pword" placeholder="Enter a Password..." />
+        {{ form.pword(placeholder=form.pword.description) }}
       </li>
       <li class="btn">
         <button type="reset">Reset</button>

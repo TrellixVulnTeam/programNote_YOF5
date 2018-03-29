@@ -4,24 +4,25 @@
 <div class="signup_form_div">
   <h1>Create Account</h1>
   <form action="/signup" method="POST">
+    {{ form.hidden_tag() }}
     <ul>
       <li class="fname">
-        <input type="text" name="fname" placeholder="First Name..." />
+        {{ form.firstName(placeholder=form.firstName.description) }}
       </li>
       <li class="lname">
-        <input type="text" name="lname" placeholder="Last Name..." />
+        {{ form.lastName(placeholder=form.lastName.description) }}
       </li>
       <li class="email">
-        <input type="text" name="email" placeholder="Email..." />
+        {{ form.email(placeholder=form.email.description) }}
       </li>
       <li class="uname">
-        <input type="text" name="uname" placeholder="Username..." />
+        {{ form.username(placeholder=form.username.description) }}
       </li>
       <li class="pword">
-        <input type="password" name="pword" placeholder="Enter a Password..." />
+        {{ form.pword(placeholder=form.pword.description) }}
       </li>
       <li class="pword1">
-        <input type="password" name="pword1" placeholder="Reenter your Password..." />
+        {{ form.pword1(placeholder=form.pword1.description) }}
       </li>
       <li class="btn">
         <button type="reset">Reset</button>
