@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"/>
+    <meta name="description" content="A simple note taking app"/>
+    <title> {{ page_title }} </title>
+    <!-- <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="backend_wrapper">
+      <p class="icon"><a href="#">&#9776;</a></p>
+      <div class="mainLeft">
+        <ul>
+          <li class="imgLi">
+            <img src="../assets/profile_pic.png" alt="Profile Picture">
+          </li>
+          <li><p>Welcome username</p></li>
+          <li class="current"><a href="#">Add Note</a></li>
+          <li><a href="#">All Notes</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Account Settings</a></li>
+          <li class="logout"><a href="#">Log Out</a></li>
+        </ul>
+      </div>
+      <div class="mainRight">
+        <h1>All Notes</h1>
+        <!-- <div class="note">
+          <input type="text" name="title" placeholder="Title...">
+          <textarea name="note_content" rows="8" cols="80" placeholder="Content..."></textarea>
+          <input type="text" name="category" placeholder="Categories...">
+          <button name="add">Add</button>
+        </div> -->
+      </div>
+      <footer class="mobile">
+        <div class="left">
+
+        </div>
+        <div class="right">
+          <p class="copyright">
+            &copy; 2018 Program Notes
+          </p>
+          <p class="email">
+            info@programnotes.com
+          </p>
+          <p>
+            Privacy Policy
+          </p>
+          <p>
+            Terms and Conditions
+          </p>
+        </div>
+      </footer>
+      <footer class="desktop">
+        <div class="f1">
+          <p>
+            info@programnotes.com
+          </p>
+        </div>
+        <div class="f2">
+        </div>
+        <div class="f3">
+          <p>
+            &copy; 2018 Program Notes
+          </p>
+        </div>
+        <div class="f4">
+          <p>
+            Privacy Policy
+          </p>
+          <p>
+            Terms and Conditions
+          </p>
+        </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="../js/script.js"></script>
+      <!-- <script src="{{url_for('static', filename='js/script.js')}}"></script> -->
+    </body>
+    </div>

@@ -2,11 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e4a8637-aedf-411c-bbb5-78fb2a300bff" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/program_note/forms.py" afterPath="$PROJECT_DIR$/program_note/forms.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/html/about.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/html/home.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/html/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/html/signup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/static/.sass-cache/12ec00c679a71339480fa52679c545b62f9f0990/_reset.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/static/.sass-cache/2678dc5351e8899235648fc442c2585b97911096/styles.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/static/.sass-cache/3afe0d06998ee719d8f41bb0929240c852a258fe/_about.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/static/.sass-cache/3afe0d06998ee719d8f41bb0929240c852a258fe/_base.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/static/.sass-cache/3afe0d06998ee719d8f41bb0929240c852a258fe/_flex_nav.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/static/.sass-cache/3afe0d06998ee719d8f41bb0929240c852a258fe/_frontEnd_base.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/static/.sass-cache/3afe0d06998ee719d8f41bb0929240c852a258fe/_home.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/static/.sass-cache/3afe0d06998ee719d8f41bb0929240c852a258fe/_login.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/static/.sass-cache/3afe0d06998ee719d8f41bb0929240c852a258fe/_signup.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/static/.sass-cache/3afe0d06998ee719d8f41bb0929240c852a258fe/_variables.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/static/.sass-cache/3afe0d06998ee719d8f41bb0929240c852a258fe/base.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/static/.sass-cache/75fcaf1b4852ceb732871195e41567cc2a7d8997/C%058/Users/lukes/OneDrive/Work/projects/program_note/app/program_note/static/sass/modules/_about.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/static/.sass-cache/75fcaf1b4852ceb732871195e41567cc2a7d8997/C%058/Users/lukes/OneDrive/Work/projects/program_note/app/program_note/static/sass/modules/_base.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/static/.sass-cache/75fcaf1b4852ceb732871195e41567cc2a7d8997/C%058/Users/lukes/OneDrive/Work/projects/program_note/app/program_note/static/sass/modules/_home.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/static/.sass-cache/75fcaf1b4852ceb732871195e41567cc2a7d8997/C%058/Users/lukes/OneDrive/Work/projects/program_note/app/program_note/static/sass/modules/_signup.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/static/.sass-cache/ee0d8591c11a2f232afe217d4b388ec7b9d9b81f/_utilities.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/static/config.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/static/css/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/static/js/script.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/static/sass/modules/_about.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/static/sass/modules/_base.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/static/sass/modules/_home.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/static/sass/modules/_login.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/static/sass/modules/_signup.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/static/sass/modules/_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/program_note/templates/designs/static/sass/styles.scss" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/program_note/templates/designs/backend/.sass-cache/3d1423069eb6d61649ac7e1714839a8af917aab6/style.scssc" afterPath="$PROJECT_DIR$/program_note/templates/designs/backend/.sass-cache/3d1423069eb6d61649ac7e1714839a8af917aab6/style.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/program_note/templates/designs/backend/.sass-cache/fdca7c70838416840ed363179c9377136e52cc8a/_base.scssc" afterPath="$PROJECT_DIR$/program_note/templates/designs/backend/.sass-cache/fdca7c70838416840ed363179c9377136e52cc8a/_base.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/program_note/templates/designs/backend/.sass-cache/fdca7c70838416840ed363179c9377136e52cc8a/_dashboard.scssc" afterPath="$PROJECT_DIR$/program_note/templates/designs/backend/.sass-cache/fdca7c70838416840ed363179c9377136e52cc8a/_dashboard.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/program_note/__init__.py" afterPath="$PROJECT_DIR$/program_note/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/program_note/config.cfg" afterPath="$PROJECT_DIR$/program_note/config.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/program_note/nav.py" afterPath="$PROJECT_DIR$/program_note/nav.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/program_note/static/css/style.css" afterPath="$PROJECT_DIR$/program_note/static/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/program_note/static/js/script.js" afterPath="$PROJECT_DIR$/program_note/static/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/program_note/templates/login.html" afterPath="$PROJECT_DIR$/program_note/templates/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/program_note/templates/signup.html" afterPath="$PROJECT_DIR$/program_note/templates/signup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/program_note/templates/designs/backend/config.rb" afterPath="$PROJECT_DIR$/program_note/templates/designs/backend/config.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/program_note/templates/designs/backend/css/style.css" afterPath="$PROJECT_DIR$/program_note/templates/designs/backend/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/program_note/templates/designs/backend/html/dashboard.html" afterPath="$PROJECT_DIR$/program_note/templates/designs/backend/html/dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/program_note/templates/designs/backend/scss/modules/_base.scss" afterPath="$PROJECT_DIR$/program_note/templates/designs/backend/scss/modules/_base.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/program_note/templates/designs/backend/scss/modules/_dashboard.scss" afterPath="$PROJECT_DIR$/program_note/templates/designs/backend/scss/modules/_dashboard.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/program_note/templates/designs/backend/scss/style.scss" afterPath="$PROJECT_DIR$/program_note/templates/designs/backend/scss/style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/program_note/venv/pip-selfcheck.json" afterPath="$PROJECT_DIR$/program_note/venv/pip-selfcheck.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/program_note/views.py" afterPath="$PROJECT_DIR$/program_note/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,58 +60,26 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/program_note/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="815">
+              <caret line="59" column="28" lean-forward="false" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
               <folding>
-                <element signature="e#0#40#0" expanded="true" />
+                <element signature="e#0#116#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/program_note/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="10" column="123" lean-forward="false" selection-start-line="10" selection-start-column="123" selection-end-line="10" selection-end-column="123" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nav.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="nav.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/program_note/nav.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+            <state relative-caret-position="627">
+              <caret line="19" column="46" lean-forward="false" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/program_note/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -90,17 +99,21 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/program_note/config.cfg" />
         <option value="$PROJECT_DIR$/program_note/templates/home.html" />
         <option value="$PROJECT_DIR$/program_note/static/style.css" />
         <option value="$PROJECT_DIR$/program_note/templates/head.html" />
         <option value="$PROJECT_DIR$/program_note/static/css/style.css" />
         <option value="$PROJECT_DIR$/program_note/run.py" />
         <option value="$PROJECT_DIR$/run.py" />
-        <option value="$PROJECT_DIR$/program_note/__init__.py" />
-        <option value="$PROJECT_DIR$/program_note/nav.py" />
         <option value="$PROJECT_DIR$/program_note/forms.py" />
+        <option value="$PROJECT_DIR$/program_note/__init__.py" />
+        <option value="$PROJECT_DIR$/program_note/config.cfg" />
+        <option value="$PROJECT_DIR$/program_note/database.py" />
+        <option value="$PROJECT_DIR$/program_note/new_user.py" />
+        <option value="$PROJECT_DIR$/program_note/load_user.py" />
+        <option value="$PROJECT_DIR$/program_note/templates/dashboardBase.html" />
         <option value="$PROJECT_DIR$/program_note/views.py" />
+        <option value="$PROJECT_DIR$/program_note/nav.py" />
       </list>
     </option>
   </component>
@@ -144,7 +157,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -171,9 +183,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="program_note" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -325,13 +356,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="2762" height="1850" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14144737" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28179824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988435" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988435" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21180767" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -356,54 +388,31 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/program_note/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1386">
+          <caret line="42" column="15" lean-forward="true" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#0#116#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/to_doApp/to_do_app/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/to_doApp/to_do_app/views.py" />
-    <entry file="file://$PROJECT_DIR$/run.py" />
-    <entry file="file://$PROJECT_DIR$/program_note/static/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="96" column="13" lean-forward="true" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/program_note/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/program_note/templates/head.html">
+    <entry file="file://$PROJECT_DIR$/program_note/nav.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
-          <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-          <folding />
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/program_note/static/css/style.css">
+    <entry file="file://$PROJECT_DIR$/program_note/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="143" column="5" lean-forward="true" selection-start-line="143" selection-start-column="5" selection-end-line="143" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/program_note/config.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#116#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -411,15 +420,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/program_note/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="330">
+          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program_note/database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program_note/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program_note/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="10" column="123" lean-forward="false" selection-start-line="10" selection-start-column="123" selection-end-line="10" selection-end-column="123" />
         </state>
       </provider>
     </entry>
@@ -433,22 +467,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/program_note/forms.py">
+    <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="10" column="123" lean-forward="false" selection-start-line="10" selection-start-column="123" selection-end-line="10" selection-end-column="123" />
+        <state relative-caret-position="99">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program_note/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/program_note/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#0#116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/to_doApp/to_do_app/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/to_doApp/to_do_app/views.py" />
+    <entry file="file://$PROJECT_DIR$/run.py" />
+    <entry file="file://$PROJECT_DIR$/program_note/static/style.css" />
+    <entry file="file://$PROJECT_DIR$/program_note/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program_note/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="143" column="5" lean-forward="true" selection-start-line="143" selection-start-column="5" selection-end-line="143" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program_note/config.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="2" column="73" lean-forward="true" selection-start-line="2" selection-start-column="73" selection-end-line="2" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program_note/new_user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="5" column="127" lean-forward="true" selection-start-line="5" selection-start-column="127" selection-end-line="5" selection-end-column="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program_note/templates/dashboardBase.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="74" column="10" lean-forward="false" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program_note/load_user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program_note/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="10" column="123" lean-forward="false" selection-start-line="10" selection-start-column="123" selection-end-line="10" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program_note/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program_note/database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="2" column="33" lean-forward="false" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program_note/templates/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program_note/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="815">
+          <caret line="59" column="28" lean-forward="false" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program_note/nav.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="19" column="46" lean-forward="false" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>

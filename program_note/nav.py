@@ -11,3 +11,11 @@ nav.register_element('navbar', Navbar(
     View('Create Account', 'signup'),
     View('Log In', 'login')
 ))
+
+nav.register_element('backendNav', Navbar(
+    'backendNav',
+    View('Add Note', 'dashboard'),
+    View('All Notes', 'allNotes'),
+    View('Categories', 'categories'),
+    View('Account Settings', 'accountSettings')
+))

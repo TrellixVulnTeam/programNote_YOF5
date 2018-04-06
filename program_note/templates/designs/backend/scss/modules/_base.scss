@@ -11,7 +11,11 @@ div.backend_wrapper {
   width: 100%;
   height: 100%;
 
-  div.left {
+  p.icon {
+    display:none;
+  }
+
+  div.mainLeft {
     flex: 0 0 20%;
     background-color: $bluePurple;
 
@@ -75,6 +79,12 @@ div.backend_wrapper {
            font-size: 1.5rem;
          }
 
+         @media screen and (max-width: 670px) {
+           a {
+             font-size: 1rem;
+           }
+         }
+
          a:hover {
            background-color: $purple;
            color: $yellow;
@@ -82,6 +92,26 @@ div.backend_wrapper {
       }
     }
   }
+
+  @media screen and (max-width: 1020px) {
+    div.mainLeft {
+      display: none;
+    }
+    p.icon {
+      display: block;
+      background-color: $purple;
+      width: 100%;
+      padding: 2rem;
+
+      a {
+        color: $orange;
+        text-decoration: none;
+        font-size: 2rem;
+      }
+    }
+  }
+
+
   footer.desktop {
     padding: 0;
     display: flex;
@@ -171,4 +201,13 @@ div.backend_wrapper {
       display: flex !important;
     }
   }
+}
+
+.show {
+  display:block !important;
+  flex: 0 0 100% !important;
+}
+
+.hide {
+  display: none !important;
 }

@@ -1,18 +1,20 @@
 @import "_base.scss";
 
-div.right {
+div.mainRight {
   background-color: $purple;
   flex: 0 0 80%;
   display: flex;
   flex-wrap: wrap;
+  height: 100%;
 
   h1 {
     flex: 0 0 100%;
-    align-self: center;
+    align-self: flex-start;
     text-align: center;
     font-family: $cursive;
     color: $orange;
     font-size: 5rem;
+
   }
 
   div.note {
@@ -25,10 +27,14 @@ div.right {
       font-family: $sans;
       background-color: $orange;
       border-style: none;
-      position: relative;
-      bottom: -0.1rem;
-      left: -4.58rem;
-      width: 643.35px;
+      border: none;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: -50%;
+      width: 50%;
       font-size: 2rem;
     }
 
@@ -37,34 +43,41 @@ div.right {
       background-color: $yellow;
       border-style: none;
       border: none;
+      padding: 0;
+      margin: 0;
       font-family: $cursive;
-      width: 644px;
+      width: 50%;
       font-size: 2rem;
       resize: none;
-      position: relative;
-      left: 2.7rem;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 4%;
+
     }
 
     input[name="category"] {
-      position: relative;
-      right: 35rem;
+      position: absolute;
+      top: 45%;
+      left: 30%;
       height: 2rem;
       padding-bottom: 2rem;
       font-family: $cursive;
       color: $orange;
       background-color: $blue;
-      width: 8.8rem;
+      width: 15%;
       border-style: none;
       font-size: 1.5rem;
     }
     input[name="category"]:placeholder {
-      color: $orange;
+      color: $orange !important;
     }
 
     button {
-      position: relative;
+      position: absolute;
       right: 15rem;
-      top: 3rem;
+      top: 60%;
+      right: 30%;
       border-style: none;
       color: $purple;
       background-color: $orange;
@@ -77,5 +90,29 @@ div.right {
       color: $orange;
       background-color: $blue;
     }
+    @media screen and (max-width: 450px) {
+      button {
+        right: 3rem;
+      }
+    }
+
+
+    @media screen and (max-width: 1000px) {
+      input[name="title"] {
+        width: 80%;
+      }
+      textarea {
+        width: 80%;
+      }
+      input[name="category"] {
+        width: 20%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  div.mainRight {
+    flex: 0 0 100%;
   }
 }

@@ -78,78 +78,107 @@ div.backend_wrapper {
   height: 100%;
 }
 /* line 14, ../scss/modules/_base.scss */
-div.backend_wrapper div.left {
+div.backend_wrapper p.icon {
+  display: none;
+}
+/* line 18, ../scss/modules/_base.scss */
+div.backend_wrapper div.mainLeft {
   flex: 0 0 20%;
   background-color: #5849B6;
 }
-/* line 18, ../scss/modules/_base.scss */
-div.backend_wrapper div.left ul {
+/* line 22, ../scss/modules/_base.scss */
+div.backend_wrapper div.mainLeft ul {
   text-align: center;
   padding-top: 2rem;
   display: flex;
   flex-wrap: wrap;
 }
-/* line 24, ../scss/modules/_base.scss */
-div.backend_wrapper div.left ul li.imgLi {
+/* line 28, ../scss/modules/_base.scss */
+div.backend_wrapper div.mainLeft ul li.imgLi {
   height: 200px;
   max-width: 200px;
   overflow: hidden;
   border-radius: 50%;
   margin: 0 auto 2rem;
 }
-/* line 31, ../scss/modules/_base.scss */
-div.backend_wrapper div.left ul li.imgLi img {
+/* line 35, ../scss/modules/_base.scss */
+div.backend_wrapper div.mainLeft ul li.imgLi img {
   width: 100%;
 }
-/* line 36, ../scss/modules/_base.scss */
-div.backend_wrapper div.left ul li:nth-child(2) {
+/* line 40, ../scss/modules/_base.scss */
+div.backend_wrapper div.mainLeft ul li:nth-child(2) {
   margin-bottom: 2rem;
 }
-/* line 39, ../scss/modules/_base.scss */
-div.backend_wrapper div.left ul li:nth-child(2) p {
+/* line 43, ../scss/modules/_base.scss */
+div.backend_wrapper div.mainLeft ul li:nth-child(2) p {
   font-family: "Nanum Pen Script", cursive;
   color: #F2A62B;
   font-size: 2rem;
 }
-/* line 46, ../scss/modules/_base.scss */
-div.backend_wrapper div.left ul li {
+/* line 50, ../scss/modules/_base.scss */
+div.backend_wrapper div.mainLeft ul li {
   flex: 0 0 100%;
 }
-/* line 49, ../scss/modules/_base.scss */
-div.backend_wrapper div.left ul li a {
+/* line 53, ../scss/modules/_base.scss */
+div.backend_wrapper div.mainLeft ul li a {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   color: #F2A62B;
 }
-/* line 56, ../scss/modules/_base.scss */
-div.backend_wrapper div.left ul li a:hover {
+/* line 60, ../scss/modules/_base.scss */
+div.backend_wrapper div.mainLeft ul li a:hover {
   color: #E3E47D;
 }
-/* line 60, ../scss/modules/_base.scss */
-div.backend_wrapper div.left ul li:not(last-child) {
+/* line 64, ../scss/modules/_base.scss */
+div.backend_wrapper div.mainLeft ul li:not(last-child) {
   margin-bottom: 1rem;
 }
-/* line 65, ../scss/modules/_base.scss */
-div.backend_wrapper div.left ul li.current a {
+/* line 69, ../scss/modules/_base.scss */
+div.backend_wrapper div.mainLeft ul li.current a {
   color: #E3E47D !important;
 }
-/* line 69, ../scss/modules/_base.scss */
-div.backend_wrapper div.left ul li.logout {
+/* line 73, ../scss/modules/_base.scss */
+div.backend_wrapper div.mainLeft ul li.logout {
   margin-top: 5rem;
 }
-/* line 71, ../scss/modules/_base.scss */
-div.backend_wrapper div.left ul li.logout a {
+/* line 75, ../scss/modules/_base.scss */
+div.backend_wrapper div.mainLeft ul li.logout a {
   background-color: #F2A62B;
   color: #870265;
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
 }
-/* line 78, ../scss/modules/_base.scss */
-div.backend_wrapper div.left ul li.logout a:hover {
+@media screen and (max-width: 670px) {
+  /* line 83, ../scss/modules/_base.scss */
+  div.backend_wrapper div.mainLeft ul li.logout a {
+    font-size: 1rem;
+  }
+}
+/* line 88, ../scss/modules/_base.scss */
+div.backend_wrapper div.mainLeft ul li.logout a:hover {
   background-color: #870265;
   color: #E3E47D;
 }
-/* line 85, ../scss/modules/_base.scss */
+@media screen and (max-width: 1020px) {
+  /* line 97, ../scss/modules/_base.scss */
+  div.backend_wrapper div.mainLeft {
+    display: none;
+  }
+  /* line 100, ../scss/modules/_base.scss */
+  div.backend_wrapper p.icon {
+    display: block;
+    background-color: #870265;
+    width: 100%;
+    padding: 2rem;
+  }
+  /* line 106, ../scss/modules/_base.scss */
+  div.backend_wrapper p.icon a {
+    color: #F2A62B;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+}
+/* line 115, ../scss/modules/_base.scss */
 div.backend_wrapper footer.desktop {
   padding: 0;
   display: flex;
@@ -159,44 +188,44 @@ div.backend_wrapper footer.desktop {
   text-align: center;
   flex: 0 0 100%;
 }
-/* line 94, ../scss/modules/_base.scss */
+/* line 124, ../scss/modules/_base.scss */
 div.backend_wrapper footer.desktop div {
   flex-basis: 50%;
 }
-/* line 98, ../scss/modules/_base.scss */
+/* line 128, ../scss/modules/_base.scss */
 div.backend_wrapper footer.desktop div.f1 {
   order: 1;
 }
-/* line 101, ../scss/modules/_base.scss */
+/* line 131, ../scss/modules/_base.scss */
 div.backend_wrapper footer.desktop div.f1 p {
   font-family: "Montserrat", sans-serif;
   color: #F2A62B;
   padding: 1rem;
 }
-/* line 108, ../scss/modules/_base.scss */
+/* line 138, ../scss/modules/_base.scss */
 div.backend_wrapper footer.desktop div.f2 {
   order: 3;
 }
-/* line 112, ../scss/modules/_base.scss */
+/* line 142, ../scss/modules/_base.scss */
 div.backend_wrapper footer.desktop div.f3 {
   order: 2;
 }
-/* line 115, ../scss/modules/_base.scss */
+/* line 145, ../scss/modules/_base.scss */
 div.backend_wrapper footer.desktop div.f3 p {
   font-family: "Montserrat", sans-serif;
   color: #E3E47D;
   padding: 1rem;
 }
-/* line 122, ../scss/modules/_base.scss */
+/* line 152, ../scss/modules/_base.scss */
 div.backend_wrapper footer.desktop div.f4 {
   order: 4;
 }
-/* line 125, ../scss/modules/_base.scss */
+/* line 155, ../scss/modules/_base.scss */
 div.backend_wrapper footer.desktop div.f4 p {
   font-family: "Montserrat", sans-serif;
   color: #E3E47D;
 }
-/* line 132, ../scss/modules/_base.scss */
+/* line 162, ../scss/modules/_base.scss */
 div.backend_wrapper footer.mobile {
   display: none !important;
   padding: 0;
@@ -207,104 +236,126 @@ div.backend_wrapper footer.mobile {
   align-items: center;
   flex: 0 0 100%;
 }
-/* line 142, ../scss/modules/_base.scss */
+/* line 172, ../scss/modules/_base.scss */
 div.backend_wrapper footer.mobile div {
   flex: 0 0 50%;
 }
-/* line 151, ../scss/modules/_base.scss */
+/* line 181, ../scss/modules/_base.scss */
 div.backend_wrapper footer.mobile div.right p {
   font-family: "Montserrat", sans-serif;
   padding-bottom: 0.5rem;
   color: #E3E47D;
 }
-/* line 157, ../scss/modules/_base.scss */
+/* line 187, ../scss/modules/_base.scss */
 div.backend_wrapper footer.mobile div.right p.copyright {
   color: #E3E47D;
 }
-/* line 161, ../scss/modules/_base.scss */
+/* line 191, ../scss/modules/_base.scss */
 div.backend_wrapper footer.mobile div.right p.email {
   color: #F2A62B;
 }
 @media screen and (max-width: 600px) {
-  /* line 167, ../scss/modules/_base.scss */
+  /* line 197, ../scss/modules/_base.scss */
   div.backend_wrapper footer.desktop {
     display: none;
   }
-  /* line 170, ../scss/modules/_base.scss */
+  /* line 200, ../scss/modules/_base.scss */
   div.backend_wrapper footer.mobile {
     display: flex !important;
   }
 }
 
+/* line 206, ../scss/modules/_base.scss */
+.show {
+  display: block !important;
+  flex: 0 0 100% !important;
+}
+
+/* line 211, ../scss/modules/_base.scss */
+.hide {
+  display: none !important;
+}
+
 /* line 3, ../scss/modules/_dashboard.scss */
-div.right {
+div.mainRight {
   background-color: #870265;
   flex: 0 0 80%;
   display: flex;
   flex-wrap: wrap;
+  height: 100%;
 }
-/* line 9, ../scss/modules/_dashboard.scss */
-div.right h1 {
+/* line 10, ../scss/modules/_dashboard.scss */
+div.mainRight h1 {
   flex: 0 0 100%;
-  align-self: center;
+  align-self: flex-start;
   text-align: center;
   font-family: "Nanum Pen Script", cursive;
   color: #F2A62B;
   font-size: 5rem;
 }
-/* line 18, ../scss/modules/_dashboard.scss */
-div.right div.note {
+/* line 20, ../scss/modules/_dashboard.scss */
+div.mainRight div.note {
   flex: 0 0 100%;
   text-align: center;
   position: relative;
 }
-/* line 23, ../scss/modules/_dashboard.scss */
-div.right div.note input[name="title"] {
+/* line 25, ../scss/modules/_dashboard.scss */
+div.mainRight div.note input[name="title"] {
   color: #5849B6;
   font-family: "Montserrat", sans-serif;
   background-color: #F2A62B;
   border-style: none;
-  position: relative;
-  bottom: -0.1rem;
-  left: -4.58rem;
-  width: 643.35px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: -50%;
+  width: 50%;
   font-size: 2rem;
 }
-/* line 35, ../scss/modules/_dashboard.scss */
-div.right div.note textarea {
+/* line 41, ../scss/modules/_dashboard.scss */
+div.mainRight div.note textarea {
   color: #018DD7;
   background-color: #E3E47D;
   border-style: none;
   border: none;
+  padding: 0;
+  margin: 0;
   font-family: "Nanum Pen Script", cursive;
-  width: 644px;
+  width: 50%;
   font-size: 2rem;
   resize: none;
-  position: relative;
-  left: 2.7rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 4%;
 }
-/* line 48, ../scss/modules/_dashboard.scss */
-div.right div.note input[name="category"] {
-  position: relative;
-  right: 35rem;
+/* line 59, ../scss/modules/_dashboard.scss */
+div.mainRight div.note input[name="category"] {
+  position: absolute;
+  top: 45%;
+  left: 30%;
   height: 2rem;
   padding-bottom: 2rem;
   font-family: "Nanum Pen Script", cursive;
   color: #F2A62B;
   background-color: #018DD7;
-  width: 8.8rem;
+  width: 15%;
   border-style: none;
   font-size: 1.5rem;
 }
-/* line 60, ../scss/modules/_dashboard.scss */
-div.right div.note input[name="category"]:placeholder {
-  color: #F2A62B;
+/* line 72, ../scss/modules/_dashboard.scss */
+div.mainRight div.note input[name="category"]:placeholder {
+  color: #F2A62B !important;
 }
-/* line 64, ../scss/modules/_dashboard.scss */
-div.right div.note button {
-  position: relative;
+/* line 76, ../scss/modules/_dashboard.scss */
+div.mainRight div.note button {
+  position: absolute;
   right: 15rem;
-  top: 3rem;
+  top: 60%;
+  right: 30%;
   border-style: none;
   color: #870265;
   background-color: #F2A62B;
@@ -312,8 +363,35 @@ div.right div.note button {
   font-size: 2rem;
   border-radius: 10px;
 }
-/* line 76, ../scss/modules/_dashboard.scss */
-div.right div.note button:hover {
+/* line 89, ../scss/modules/_dashboard.scss */
+div.mainRight div.note button:hover {
   color: #F2A62B;
   background-color: #018DD7;
+}
+@media screen and (max-width: 450px) {
+  /* line 94, ../scss/modules/_dashboard.scss */
+  div.mainRight div.note button {
+    right: 3rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* line 101, ../scss/modules/_dashboard.scss */
+  div.mainRight div.note input[name="title"] {
+    width: 80%;
+  }
+  /* line 104, ../scss/modules/_dashboard.scss */
+  div.mainRight div.note textarea {
+    width: 80%;
+  }
+  /* line 107, ../scss/modules/_dashboard.scss */
+  div.mainRight div.note input[name="category"] {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  /* line 115, ../scss/modules/_dashboard.scss */
+  div.mainRight {
+    flex: 0 0 100%;
+  }
 }
