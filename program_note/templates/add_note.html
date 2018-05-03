@@ -4,10 +4,33 @@
 
 <h1>Add Note</h1>
 <div class="note">
-  <input type="text" name="title" placeholder="Title...">
-  <textarea name="note_content" rows="8" cols="80" placeholder="Content..."></textarea>
-  <input type="text" name="category" placeholder="Categories...">
-  <button name="add">Add</button>
+  <form action="/dashboard" method="POST" id="note">
+    {{ form.hidden_tag() }}
+
+    <div class="title">
+        {{ form.title(placeholder=form.title.description) }}
+        {% if form.title.errors %}
+          <ul class="errors">{% for error in form.title.errors %}<li>{{ error }}</li>{% endfor %}</ul>
+        {% endif %}
+    </div>
+
+    <div class="content">
+        {{ form.content(placeholder=form.content.description) }}
+        {% if form.content.errors %}
+          <ul class="errors">{% for error in form.content.errors %}<li>{{ error }}</li>{% endfor %}</ul>
+        {% endif %}
+    </div>
+
+    <div class="categories">{{ form.categories(placeholder=form.categories.description) }}
+        {% if form.categories.errors %}
+          <ul class="errors">{% for error in form.categories.errors %}<li>{{ error }}</li>{% endfor %}</ul>
+        {% endif %}
+        <p class="tooltip">Separate categories with a comma</p>
+    </div>
+
+    <input type="submit" value="Add Note">
+  </form>
+
 </div>
 
 {% endblock %}

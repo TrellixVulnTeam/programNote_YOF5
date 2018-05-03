@@ -27,11 +27,21 @@
       <div class="mainRight">
         <h1>Add Note</h1>
         <div class="note">
-          <input type="text" name="title" placeholder="Title...">
-          <textarea name="note_content" rows="8" cols="80" placeholder="Content..."></textarea>
-          <input type="text" name="category" placeholder="Categories...">
-          <button name="add">Add</button>
-        </div>
+    <form action="/dashboard" method="POST" id="note">
+      <input id="csrf_token" name="csrf_token" type="hidden" value="IjNjMTNmZGU5ODgzMTkxMzkxZDdlYTY1NDY4OGMyMTMyZmVhN2I4NDIi.DcwAYw.53LisDGNBbNcuo0JeBpaaCPM3dY" />
+      <div class="title">
+        <input id="title" name="title" placeholder="Title..." type="text" value="">
+      </div>
+      <div class="content">
+        <textarea id="content" name="content" placeholder="Content..." rows="8"></textarea>
+      </div>
+      <div class="categories">
+        <textarea name="categories" placeholder="Categories..."></textarea>
+        <p class="tooltip">Seperate categories with a comma</p>
+      </div>
+      <input type="submit" value="Add Note">
+    </form>
+  </div>
       </div>
       <footer class="mobile">
         <div class="left">

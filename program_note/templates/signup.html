@@ -5,9 +5,12 @@
   <h1>Create Account</h1>
   <form action="/signup" method="POST">
     {{ form.hidden_tag() }}
+    <!--for cross site scripting security-->
     <ul>
       <li class="fname">
+        <!--renders input field and sets placeholder-->
         {{ form.firstName(placeholder=form.firstName.description) }}
+        <!--checks for error codes and displays-->
         {% if form.firstName.errors %}
           <ul class="errors">{% for error in form.firstName.errors %}<li>{{ error }}</li>{% endfor %}</ul>
         {% endif %}

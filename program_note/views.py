@@ -42,7 +42,12 @@ def login():
 @app.route('/dashboard', methods=["GET", "POST"])
 @login_required
 def dashboard():
-    return render_template('add_note.html', page_title = "Welcome", username = current_user.uname)
+    form = forms.AddNoteForm()
+    if form.validate_on_submit():
+        return form.title.data
+    else:
+        return render_template('add_note.html', page_title="Welcome", username = current_user.uname, form = form)
+    return render_template('add_note.html', page_title = "Welcome", username = current_user.uname, form = form)
 
 @app.route('/allnotes', methods=["GET", "POST"])
 @login_required

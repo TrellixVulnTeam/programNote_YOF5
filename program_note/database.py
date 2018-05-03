@@ -12,3 +12,12 @@ class User(UserMixin, db.Model):
     lname = db.Column('lname', db.Unicode)
     email = db.Column('email', db.Unicode, nullable=False)
     pword = db.Column('pword', db.String(80), nullable=False)
+    notes = db.relationship('Notes', backref='user', lazy=True)
+
+class Notes(db.Model):
+    __tablename__ = "tblNotes"
+    id = db.Column('id', db.Integer, primary_key=True)
+    title = db.Column('title', db.String(20), nullable=False)
+    note = db.Column('note', db.String(100), nullable=False)
+    category = db.Column('category', db.String(200))
+    user_id = db.Column(db.Integer, db.ForeignKey('tblUser.id'), nullable=False)

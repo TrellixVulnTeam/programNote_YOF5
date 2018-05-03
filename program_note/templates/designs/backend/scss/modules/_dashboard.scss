@@ -18,95 +18,126 @@ div.mainRight {
   }
 
   div.note {
-    flex: 0 0 100%;
-    text-align: center;
-    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 2rem;
 
-    input[name="title"] {
-      color: $bluePurple;
-      font-family: $sans;
-      background-color: $orange;
-      border-style: none;
-      border: none;
-      padding: 0;
-      margin: 0;
-      position: absolute;
-      transform: translate(-50%, -50%);
-      left: 50%;
-      top: -50%;
-      width: 50%;
-      font-size: 2rem;
-    }
+    form[id="note"] {
+      flex: 0 0 100%;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
 
-    textarea {
-      color: $blue;
-      background-color: $yellow;
-      border-style: none;
-      border: none;
-      padding: 0;
-      margin: 0;
-      font-family: $cursive;
-      width: 50%;
-      font-size: 2rem;
-      resize: none;
-      position: absolute;
-      transform: translate(-50%, -50%);
-      left: 50%;
-      top: 4%;
+      div.title {
+        grid-column: 2 / 6;
+        grid-row: 1;
 
-    }
+        input {
+          background-color: $orange;
+          font-family: $sans;
+          color: $bluePurple;
+          border-style: none;
+          margin: none;
+          padding: 1rem;
+          font-size: 2rem;
+          width: 100%;
+          height: 100%;
+          box-sizing: border-box;
 
-    input[name="category"] {
-      position: absolute;
-      top: 45%;
-      left: 30%;
-      height: 2rem;
-      padding-bottom: 2rem;
-      font-family: $cursive;
-      color: $orange;
-      background-color: $blue;
-      width: 15%;
-      border-style: none;
-      font-size: 1.5rem;
-    }
-    input[name="category"]:placeholder {
-      color: $orange !important;
-    }
-
-    button {
-      position: absolute;
-      right: 15rem;
-      top: 60%;
-      right: 30%;
-      border-style: none;
-      color: $purple;
-      background-color: $orange;
-      font-family: $sans;
-      font-size: 2rem;
-      border-radius: 10px;
-    }
-
-    button:hover {
-      color: $orange;
-      background-color: $blue;
-    }
-    @media screen and (max-width: 450px) {
-      button {
-        right: 3rem;
+        &::placeholder {
+          color: $bluePurple;
+          font-family: $sans;
+        }
       }
     }
 
+      div.content {
+        grid-column: 2 / 6;
+        grid-row: 2 / 5;
 
-    @media screen and (max-width: 1000px) {
-      input[name="title"] {
-        width: 80%;
+        textarea {
+          background-color: $yellow;
+          color: $blue;
+          border-style: none;
+          resize: none;
+          font-family: $cursive;
+          font-size: 1.5rem;
+          padding: 1rem;
+          width: 100%;
+          height: 100%;
+          box-sizing: border-box;
+        }
       }
-      textarea {
-        width: 80%;
+
+      div.categories {
+        grid-column: 3 / 4;
+        grid-row: 4 / 6;
+
+        textarea {
+          background-color: $blue;
+          color: $orange;
+          border-style: none;
+          resize: none;
+          height: 100%;
+          font-family: $cursive;
+          box-sizing: border-box;
+          padding: 1rem;
+          font-size: 1.5rem;
+          width: 100%;
+
+          &:focus ~ p.tooltip {
+            visibility: visible;
+          }
+        }
+
+        p.tooltip {
+          position: relative;
+          bottom: 140%;
+          background-color: $transparent_purple;
+          padding: 1rem 2rem;
+          border-radius: 10px;
+          font-family: $sans;
+          color: $orange;
+          visibility: hidden;
+          z-index: 100;
+        }
       }
-      input[name="category"] {
-        width: 20%;
+
+      @media screen and (max-width: 870px) {
+        div.categories {
+          grid-column: 2 / 6;
+          grid-row: 5 / 6;
+        }
       }
+
+
+      input[type="submit"] {
+        grid-column: 5 / 6;
+        margin-top: 1rem;
+        grid-row: 7;
+        color: $purple;
+        background-color: $orange;
+        font-family: $sans;
+        font-size: 1.5rem;
+        border-style: none;
+        border-radius: 10px;
+        padding: 1rem 0.5rem;
+
+        &:hover {
+          color: $orange;
+          background-color: $bluePurple;
+        }
+      }
+
+      @media screen and (max-width: 450px) {
+        div.title, div.content, div.categories {
+          grid-column: 1 / 7;
+        }
+      }
+
+
     }
   }
 }
