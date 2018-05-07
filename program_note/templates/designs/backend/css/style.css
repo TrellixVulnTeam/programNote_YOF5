@@ -421,3 +421,52 @@ div.mainRight div.note form[id="note"] input[type="submit"]:hover {
     flex: 0 0 100%;
   }
 }
+/* line 3, ../scss/modules/_all.scss */
+div.mainRight {
+  background-color: #870265;
+  flex: 0 0 80%;
+  display: flex;
+  grid-template-columns: repeat(4, 1fr);
+  height: 100%;
+}
+/* line 10, ../scss/modules/_all.scss */
+div.mainRight h1 {
+  flex: 0 0 100%;
+  text-align: center;
+  font-family: "Nanum Pen Script", cursive;
+  color: #F2A62B;
+  font-size: 5rem;
+}
+/* line 19, ../scss/modules/_all.scss */
+div.mainRight div.notes {
+  flex: 0 0 100%;
+  display: flex;
+  align-content: center;
+  text-align: center;
+}
+/* line 26, ../scss/modules/_all.scss */
+div.mainRight div.notes div.individual_note {
+  flex: 0 0 100%;
+  display: inline-grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+/* line 31, ../scss/modules/_all.scss */
+div.mainRight div.notes div.individual_note p.title {
+  grid-column: 1 / 4;
+  color: #5849B6;
+  background-color: #F2A62B;
+  font-family: "Montserrat", sans-serif;
+  height: 2rem;
+}
+/* line 38, ../scss/modules/_all.scss */
+div.mainRight div.notes div.individual_note p.category_list {
+  grid-column: 4 / 5;
+}
+/* line 41, ../scss/modules/_all.scss */
+div.mainRight div.notes div.individual_note ul.cat_list {
+  display: none;
+}
+/* line 44, ../scss/modules/_all.scss */
+div.mainRight div.notes div.individual_note div.note_content {
+  grid-column: 1 / 5;
+}
