@@ -425,48 +425,84 @@ div.mainRight div.note form[id="note"] input[type="submit"]:hover {
 div.mainRight {
   background-color: #870265;
   flex: 0 0 80%;
-  display: flex;
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
-  height: 100%;
+  grid-template-rows: 5rem;
 }
-/* line 10, ../scss/modules/_all.scss */
+/* line 8, ../scss/modules/_all.scss */
 div.mainRight h1 {
-  flex: 0 0 100%;
+  grid-column: 1 / 5;
+  grid-row: 1;
   text-align: center;
+  font-size: 5rem;
   font-family: "Nanum Pen Script", cursive;
   color: #F2A62B;
-  font-size: 5rem;
+}
+/* line 14, ../scss/modules/_all.scss */
+div.mainRight div.notes {
+  grid-column: 1 / 5;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
 }
 /* line 19, ../scss/modules/_all.scss */
-div.mainRight div.notes {
-  flex: 0 0 100%;
-  display: flex;
-  align-content: center;
-  text-align: center;
-}
-/* line 26, ../scss/modules/_all.scss */
 div.mainRight div.notes div.individual_note {
-  flex: 0 0 100%;
-  display: inline-grid;
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin: 2rem 0 5rem 0;
+  width: 80%;
 }
-/* line 31, ../scss/modules/_all.scss */
+/* line 24, ../scss/modules/_all.scss */
 div.mainRight div.notes div.individual_note p.title {
   grid-column: 1 / 4;
   color: #5849B6;
   background-color: #F2A62B;
+  padding: 1rem 2rem;
   font-family: "Montserrat", sans-serif;
-  height: 2rem;
+}
+/* line 29, ../scss/modules/_all.scss */
+div.mainRight div.notes div.individual_note p.title:hover {
+  cursor: pointer;
+}
+/* line 34, ../scss/modules/_all.scss */
+div.mainRight div.notes div.individual_note p.category_list {
+  color: #F2A62B;
+  background-color: #5849B6;
+  padding: 1rem 2rem;
+  font-family: "Montserrat", sans-serif;
 }
 /* line 38, ../scss/modules/_all.scss */
-div.mainRight div.notes div.individual_note p.category_list {
-  grid-column: 4 / 5;
+div.mainRight div.notes div.individual_note p.category_list:hover {
+  cursor: pointer;
 }
-/* line 41, ../scss/modules/_all.scss */
+/* line 43, ../scss/modules/_all.scss */
 div.mainRight div.notes div.individual_note ul.cat_list {
   display: none;
+  grid-column: 1 / 5;
+  grid-row: 2;
+  background-color: #5849B6;
+  color: #E3E47D;
+  font-family: "Montserrat", sans-serif;
 }
-/* line 44, ../scss/modules/_all.scss */
+/* line 49, ../scss/modules/_all.scss */
+div.mainRight div.notes div.individual_note ul.cat_list li {
+  text-align: center;
+  padding: 1rem 0;
+}
+/* line 54, ../scss/modules/_all.scss */
 div.mainRight div.notes div.individual_note div.note_content {
   grid-column: 1 / 5;
+  background-color: #E3E47D;
+  color: #5849B6;
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 1.8rem;
+  padding: 1.5rem 0;
+  display: none;
+}
+
+@media screen and (max-width: 1020px) {
+  /* line 66, ../scss/modules/_all.scss */
+  div.mainRight {
+    flex: 0 0 100%;
+  }
 }

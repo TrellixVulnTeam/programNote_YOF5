@@ -1,0 +1,21 @@
+{% extends 'dashboardBase.html' %}
+
+{% block content %}
+
+<h1>All Notes</h1>
+<div class="notes">
+  {% for note in notes %}
+    <div class="individual_note"  id="{{ note.id }}">
+      <p class="title">{{ note.title }}</p>
+      <p class="category_list">Categories</p>
+      <ul class="cat_list">
+        {% for cat in note.category %}
+        <li>{{ cat }}</li>
+        {% endfor %}
+      </ul>
+      <div class="note_content">{{ note.note }}</div>
+    </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

@@ -25,4 +25,16 @@ $(function() {
     $('.mainLeft').toggleClass('show');
   })
 
+  // show note content
+    $('p.title').on("click", function() {
+      var id = $(this).parent().attr('id');
+      $('#' + id + " div.note_content").toggle();
+    });
+
+  // show note categories
+    $('p.category_list').on("click", function() {
+      var id = $(this).parent().attr('id');
+      $('#' + id + " ul").toggle();
+    });
+
 });

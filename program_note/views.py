@@ -1,4 +1,4 @@
-from program_note import app, forms, nav, current_user, login_user, login_required, logout_user, new_user, load_user, new_note
+from program_note import app, forms, nav, current_user, login_user, login_required, logout_user, new_user, load_user, new_note, database
 from flask import render_template, redirect, url_for
 
 
@@ -63,7 +63,9 @@ def dashboard():
 @app.route('/allnotes', methods=["GET", "POST"])
 @login_required
 def allNotes():
-    return "All notes"
+    # database query to get all notes with foreign key = current user id
+    all_notes = database.Notes.query.filter_by(user_id=current_user.id).all()
+    return render_template("all_notes.html", page_title="All Notes", notes=all_notes )
 
 # -----------------------------Categories---------------------
 @app.route('/categories', methods=["GET", "POST"])

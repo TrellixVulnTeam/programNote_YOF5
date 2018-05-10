@@ -3,84 +3,67 @@
 div.mainRight {
   background-color: $purple;
   flex: 0 0 80%;
-  display: flex;
-  grid-template-columns: repeat(4, 1fr);
-  height: 100%;
+  display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: 5rem;
 
   h1 {
-    // height: 20%;
-    flex: 0 0 100%;
-    text-align: center;
-    font-family: $cursive;
+    grid-column: 1 / 5; grid-row: 1;
+    text-align: center; font-size: 5rem; font-family: $cursive;
     color: $orange;
-    font-size: 5rem;
   }
 
   div.notes {
-    flex: 0 0 100%;
-    display: flex;
-    align-content: center;
-    text-align: center;
-
+    grid-column: 1 / 5;
+    width: 100%;
+    margin: 0 auto; padding: 2rem;
 
     div.individual_note {
-      flex: 0 0 100%;
-      display: inline-grid;
-      grid-template-columns: repeat(4, 1fr);
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      margin: 2rem 0 5rem 0;
+      width: 80%;
 
       p.title {
         grid-column: 1 / 4;
-        color: $bluePurple;
-        background-color: $orange;
+        color: $bluePurple; background-color: $orange;
+        padding: 1rem 2rem;
         font-family: $sans;
-        height: 2rem;
+        &:hover {
+          cursor: pointer;
+        }
       }
+
       p.category_list {
-        grid-column: 4 / 5;
+        color: $orange; background-color: $bluePurple;
+        padding: 1rem 2rem;
+        font-family: $sans;
+        &:hover {
+          cursor: pointer;
+        }
       }
+
       ul.cat_list {
         display: none;
+        grid-column: 1 / 5; grid-row: 2;
+        background-color: $bluePurple; color: $yellow;
+        font-family: $sans;
+
+        li {
+          text-align: center;
+          padding: 1rem 0;
+        }
       }
       div.note_content {
         grid-column: 1 / 5;
+        background-color: $yellow; color: $bluePurple;
+        font-family: $cursive; font-size: 1.8rem;
+        padding: 1.5rem 0;
+        display: none;
       }
     }
   }
+}
 
-  // div.notes {
-  //   height: 80%;
-  //   flex: 0 0 100%;
-  //   flex-wrap: wrap;
-  //   display: flex;
-  //   justify-content: center;
-  //   display: grid;
-  //
-  //   p.title {
-  //     grid-column: 1 / 4;
-  //     grid-row: 1;
-  //     background-color: $orange;
-  //     color: $bluePurple;
-  //     font-family: $sans;
-  //     font-size: 1.5rem;
-  //     padding-top: 1rem;
-  //   }
-  //   p.category_list {
-  //     grid-column: 4 / 5;
-  //     background-color: $bluePurple;
-  //     color: $orange;
-  //     font-family: $sans;
-  //     padding-top: 1rem;
-  //   }
-  //   ul.cat_list {
-  //     display: none;
-  //   }
-  //   div.note_content {
-  //     grid-column: 1 / 5;
-  //     grid-row: 2 / 5;
-  //     color: $bluePurple;
-  //     background-color: $yellow;
-  //     font-family: $cursive;
-  //     overflow-y: auto;
-  //   }
-  // }
+@media screen and (max-width: 1020px) {
+  div.mainRight {
+    flex: 0 0 100%;
+  }
 }

@@ -275,32 +275,14 @@ div.backend_wrapper footer.mobile div.right p.email {
 .hide {
   display: none !important;
 }
-
-/* line 3, ../scss/modules/_dashboard.scss */
-div.mainRight {
-  background-color: #870265;
-  flex: 0 0 80%;
-  display: flex;
-  flex-wrap: wrap;
-  height: 100%;
-}
-/* line 10, ../scss/modules/_dashboard.scss */
-div.mainRight h1 {
-  flex: 0 0 100%;
-  align-self: flex-start;
-  text-align: center;
-  font-family: "Nanum Pen Script", cursive;
-  color: #F2A62B;
-  font-size: 5rem;
-}
 /* line 20, ../scss/modules/_dashboard.scss */
 div.mainRight div.note {
-  display: flex;
-  flex-wrap: nowrap;
+  display: flex;  flex-wrap: nowrap;
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
   padding: 2rem;
+  grid-column: 1 / 5;
 }
 /* line 28, ../scss/modules/_dashboard.scss */
 div.mainRight div.note form[id="note"] {
@@ -360,12 +342,13 @@ div.mainRight div.note form[id="note"] div.categories textarea {
   color: #F2A62B;
   border-style: none;
   resize: none;
-  height: 100%;
+  height: 50%;
   font-family: "Nanum Pen Script", cursive;
   box-sizing: border-box;
   padding: 1rem;
   font-size: 1.5rem;
   width: 100%;
+  margin-top: 5rem;
 }
 /* line 90, ../scss/modules/_dashboard.scss */
 div.mainRight div.note form[id="note"] div.categories textarea:focus ~ p.tooltip {
@@ -390,6 +373,9 @@ div.mainRight div.note form[id="note"] div.categories p.tooltip {
     grid-column: 2 / 6;
     grid-row: 5 / 6;
   }
+ div.mainRight div.note form#note div.categories textarea#categories {
+ margin-top: 0;
+ }
 }
 /* line 100, ../scss/modules/_dashboard.scss */
 div.mainRight div.note form[id="note"] input[type="submit"] {
@@ -418,6 +404,92 @@ div.mainRight div.note form[id="note"] input[type="submit"]:hover {
 
 @media screen and (max-width: 1020px) {
   /* line 130, ../scss/modules/_dashboard.scss */
+  div.mainRight {
+    flex: 0 0 100%;
+  }
+}
+
+/* line 3, ../scss/modules/_all.scss */
+div.mainRight {
+  background-color: #870265;
+  flex: 0 0 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 5rem;
+}
+/* line 8, ../scss/modules/_all.scss */
+div.mainRight h1 {
+  grid-column: 1 / 5;
+  grid-row: 1;
+  text-align: center;
+  font-size: 5rem;
+  font-family: "Nanum Pen Script", cursive;
+  color: #F2A62B;
+}
+/* line 14, ../scss/modules/_all.scss */
+div.mainRight div.notes {
+  grid-column: 1 / 5;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+/* line 19, ../scss/modules/_all.scss */
+div.mainRight div.notes div.individual_note {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 2rem 0 5rem 0;
+  width: 80%;
+}
+/* line 24, ../scss/modules/_all.scss */
+div.mainRight div.notes div.individual_note p.title {
+  grid-column: 1 / 4;
+  color: #5849B6;
+  background-color: #F2A62B;
+  padding: 1rem 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+/* line 29, ../scss/modules/_all.scss */
+div.mainRight div.notes div.individual_note p.title:hover {
+  cursor: pointer;
+}
+/* line 34, ../scss/modules/_all.scss */
+div.mainRight div.notes div.individual_note p.category_list {
+  color: #F2A62B;
+  background-color: #5849B6;
+  padding: 1rem 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+/* line 38, ../scss/modules/_all.scss */
+div.mainRight div.notes div.individual_note p.category_list:hover {
+  cursor: pointer;
+}
+/* line 43, ../scss/modules/_all.scss */
+div.mainRight div.notes div.individual_note ul.cat_list {
+  display: none;
+  grid-column: 1 / 5;
+  grid-row: 2;
+  background-color: #5849B6;
+  color: #E3E47D;
+  font-family: "Montserrat", sans-serif;
+}
+/* line 49, ../scss/modules/_all.scss */
+div.mainRight div.notes div.individual_note ul.cat_list li {
+  text-align: center;
+  padding: 1rem 0;
+}
+/* line 54, ../scss/modules/_all.scss */
+div.mainRight div.notes div.individual_note div.note_content {
+  grid-column: 1 / 5;
+  background-color: #E3E47D;
+  color: #5849B6;
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 1.8rem;
+  padding: 1.5rem 0;
+  display: none;
+}
+
+@media screen and (max-width: 1020px) {
+  /* line 66, ../scss/modules/_all.scss */
   div.mainRight {
     flex: 0 0 100%;
   }
