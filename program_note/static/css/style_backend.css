@@ -436,13 +436,30 @@ div.mainRight div.notes {
 /* line 19, ../scss/modules/_all.scss */
 div.mainRight div.notes div.individual_note {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 0.5fr repeat(4, 1fr);
   margin: 2rem 0 5rem 0;
   width: 80%;
 }
+div.mainRight div.notes div.individual_note div.delete {
+    grid-column: 1 ;
+    width: 100%;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    margin: auto;
+    background-color: red;
+}
+div.mainRight div.notes div.individual_note div.delete:hover {
+    background-color: #018DD7;
+}
+
+div.mainRight div.notes div.individual_note div.delete p {
+    text-align: center;
+    padding: 1rem 2rem;
+    color: #F2A62B;
+}
 /* line 24, ../scss/modules/_all.scss */
 div.mainRight div.notes div.individual_note p.title {
-  grid-column: 1 / 4;
+  grid-column: 2 / 5;
   color: #5849B6;
   background-color: #F2A62B;
   padding: 1rem 2rem;

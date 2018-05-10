@@ -1,5 +1,5 @@
-from program_note import app, forms, nav, current_user, login_user, login_required, logout_user, new_user, load_user, new_note, database
-from flask import render_template, redirect, url_for
+from program_note import app, forms, nav, current_user, login_user, login_required, logout_user, new_user, load_user, note_deleteAdd, database
+from flask import render_template, redirect, url_for, request
 
 
 # ----------------------------HOME PAGE----------------------------
@@ -52,7 +52,7 @@ def login():
 def dashboard():
     form = forms.AddNoteForm()
     if form.validate_on_submit():
-        new_note.add_note(form.title.data, form.content.data, form.categories.data, current_user.id)
+        note_deleteAdd.add_note(form.title.data, form.content.data, form.categories.data, current_user.id)
         return redirect(url_for('dashboard'))
     else:
         return render_template('add_note.html', page_title="Welcome", username = current_user.uname, form = form)
@@ -65,7 +65,9 @@ def dashboard():
 def allNotes():
     # database query to get all notes with foreign key = current user id
     all_notes = database.Notes.query.filter_by(user_id=current_user.id).all()
-    return render_template("all_notes.html", page_title="All Notes", notes=all_notes )
+    id = request.args.get('note_id')
+    note_deleteAdd.delete_note(id)
+    return render_template("all_notes.html", page_title="All Notes",  notes=all_notes )
 
 # -----------------------------Categories---------------------
 @app.route('/categories', methods=["GET", "POST"])
